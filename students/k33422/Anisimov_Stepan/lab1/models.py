@@ -46,6 +46,7 @@ class TaskDefault(SQLModel):
     name: str
     description: str
     deadline: datetime
+    urgency: str
     comp_id: int = Field(foreign_key="competition.id")
 
 
